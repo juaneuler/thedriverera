@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**------------HEADER-----------*/
+
+header {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+header h1 {
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #F3F8FF;
+}
+
+header a {
+    text-decoration: none;
+}
+
+span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+header nav a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px !important;
+    color: white !important;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #000000 !important;
+}
+
+.navbar-toggler {
+    background-color: white !important;
+}
+
+/**-----------MAIN----------*/
+
+main {
+    background-color: #222831;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0;
+}
+
+main section ol li {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #222831;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+h3 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+}
+
+.portada div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada img {
+    width: 95%;
+    height: 95%;
+    border-radius: 10px;
+}
+
+.portada iframe {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.portada h2 {
+    margin: 10px;
+}
+
+.sobreLaBanda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sobreLaBanda h2 {
+    width: 100%;
+}
+
+.miembros {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.miembros h2 {
+    width: 100%;
+}
+
+.miembros ul {
+    list-style: none;
+}
+
+.carruselMiembros {
+    width: 40% !important;
+}
+
+.cancionesRecomendadas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.cancionesRecomendadas h2 {
+    width: 100%;
+}
+
+.singlesDivs img {
+    width: 400px;
+    height: 400px;
+}
+
+.singlesDivs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.albumesDivs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.albumesDivs a {
+    text-decoration: none;
+}
+
+.albumesDivs h3:hover {
+    color: green;
+}
+
+.albumesDivs img {
+    width: 400px;
+    height: 400px;
+}
+
+#xtracklist,
+#girlfriendtracklist,
+#summermixtapetracklist,
+h2 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.resenas h3 {
+    color: #222831;
+    font-style: italic;
+}
+
+.resenas p {
+    color: #222831
+}
+
+.resenas a {
+    text-decoration: none;
+    font-style: italic;
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.resenas div {
+    padding: 10px;
+    margin: 15px;
+    border: #F3F8FF 5px solid;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.contenedorVideos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 400px);
+}
+
+.titulosVideos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.carruselTour {
+    width: 40% !important;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.carruselVorterix {
+    width: 40% !important;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.carruselLolla {
+    width: 50% !important;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.twitter-tweet {
+    margin: 0 auto;
+}
+
+.girlfriendTour div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.girlfriendTour img {
+    width: 70%;
+}
+
+.enVivo {
+    margin-top: 10px;
+}
+
+.contenedorVideosCortos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 400px);
+}
+
+.videosCortosVivo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.conciertosCompletos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+}
+
+.conciertosCompletosVideos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/**------FOOTER------*/
+
+footer {
+    background-color: #000000;
+    text-align: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 20%;
+}
+
+footer a {
+    font-size: 40px;
+    color: white;
+}
+
+footer a:hover {
+    color: green;
+}
+
+footer p {
+    margin: 0;
+    padding-bottom: 10px;
+    color: white;
+    font-style: italic;
+}
+
+
+/**------MEDIA QUERIES------*/
+
+@media screen and (max-width:1075px) {
+    .contenedorVideos {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 400px);
+    }
+
+    .contenedorVideosCortos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 400px);
+    }
+
+    .conciertosCompletos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .carruselVorterix {
+        width: 70% !important;
+    }
+
+}
+
+@media screen and (max-width:825px) {
+    .carruselMiembros {
+        width: 60% !important;
+    }
+
+}
+
+@media screen and (max-width:835px) {
+    .girlfriendTour img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:785px) {
+    .carruselTour {
+        width: 60% !important;
+    }
+
+}
+
+@media screen and (max-width: 610px) {
+    .portada img {
+        width: 90%;
+        height: 80%;
+    }
+
+    .portada iframe {
+        width: 90%;
+        height: 70%;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    main section ol li {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: white;
+    }
+
+    .miembros {
+        font-size: 15px;
+    }
+
+    footer div {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .titulosVideos iframe {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:591px) {
+    .videosCortosVivo iframe {
+        width: 60%;
+    }
+
+    .conciertosCompletosVideos iframe {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:583px) {
+    .girlfriendTour img {
+        width: 80%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width:573px) {
+    .twitter-tweet {
+        width: 70% !important;
+    }
+}
+
+@media screen and (max-width:510px) {
+    header h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:493px) {
+    .carruselTour {
+        width: 80% !important;
+    }
+
+}
+
+@media screen and (max-width:443px) {
+    .carruselMiembros {
+        width: 80% !important;
+    }
+
+}
+
+@media screen and (max-width:430px) {
+    .singlesDivs img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .albumesDivs img {
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width:389px) {
+    h3 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:381px) {
+    .contenedorTweet {
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .singlesDivs img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .albumesDivs img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .carruselVorterix {
+        width: 80% !important;
+    }
+
+    footer div {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:281px) {
+    .contenedorTweet {
+        width: 40% !important;
+        height: 70% !important;
+    }
+}
