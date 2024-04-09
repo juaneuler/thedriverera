@@ -257,7 +257,7 @@ h2 {
 }
 
 .carruselVorterix {
-    width: 40% !important;
+    width: 60% !important;
     margin: 0 auto;
     margin-bottom: 15px;
     margin-top: 10px;
@@ -331,7 +331,7 @@ footer div {
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    width: 20%;
+    width: 40%;
 }
 
 footer a {
@@ -407,7 +407,6 @@ footer p {
 
     .portada iframe {
         width: 90%;
-        height: 70%;
     }
 
     p {
@@ -446,11 +445,11 @@ footer p {
 
 @media screen and (max-width:591px) {
     .videosCortosVivo iframe {
-        width: 60%;
+        width: 80%;
     }
 
     .conciertosCompletosVideos iframe {
-        width: 60%;
+        width: 80%;
     }
 }
 
@@ -477,6 +476,13 @@ footer p {
 @media screen and (max-width:493px) {
     .carruselTour {
         width: 80% !important;
+    }
+
+}
+
+@media screen and (max-width:485px) {
+    footer div {
+        width: 60%;
     }
 
 }
@@ -510,32 +516,5 @@ footer p {
 @media screen and (max-width:381px) {
     .contenedorTweet {
         width: 50% !important;
-    }
-}
-
-@media screen and (max-width:330px) {
-    .singlesDivs img {
-        width: 250px;
-        height: 250px;
-    }
-
-    .albumesDivs img {
-        width: 250px;
-        height: 250px;
-    }
-
-    .carruselVorterix {
-        width: 80% !important;
-    }
-
-    footer div {
-        width: 60%;
-    }
-}
-
-@media screen and (max-width:281px) {
-    .contenedorTweet {
-        width: 40% !important;
-        height: 70% !important;
     }
 }
