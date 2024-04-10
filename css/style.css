@@ -399,6 +399,13 @@ footer p {
 
 }
 
+@media screen and (max-width:650px) {
+    .carruselVorterix {
+        width: 80% !important;
+    }
+
+}
+
 @media screen and (max-width: 610px) {
     .portada img {
         width: 90%;
@@ -465,6 +472,13 @@ footer p {
     .twitter-tweet {
         width: 70% !important;
     }
+}
+
+@media screen and (max-width:513px) {
+    .carruselVorterix {
+        width: 90% !important;
+    }
+
 }
 
 @media screen and (max-width:510px) {
