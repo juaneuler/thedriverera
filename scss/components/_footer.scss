@@ -1,0 +1,28 @@
+footer {
+    background-color: $color-uno;
+    text-align: center;
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+        width: 40%;
+
+        a {
+            font-size: 40px;
+            color: $color-dos;
+
+            &:hover {
+                color: green;
+            }
+        }
+    }
+
+    p {
+        margin: 0;
+        padding-bottom: 10px;
+        color: $color-dos;
+        font-style: italic;
+    }
+}

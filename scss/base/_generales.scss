@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #000000 !important;
+}
+
+.navbar-toggler {
+    background-color: white !important;
+}
+
+main {
+    background-color: #222831;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #222831;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+h3 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+}
+
+.miembros {
+    .carruselMiembros {
+        width: 40% !important;
+    }
+}
+
+.carruselTour {
+    width: 40% !important;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.carruselVorterix {
+    width: 60% !important;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.carruselLolla {
+    width: 50% !important;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+//! VARIABLES !//
+
+$color-uno:#000000;
+$color-dos:white;
+$color-tres:#222831;
+$color-cuatro:#F3F8FF;
+
+
+//! MIXINS !//
+
+@mixin flex ($flex, $justify, $align, $direction){
+
+}

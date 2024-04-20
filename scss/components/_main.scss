@@ -1,0 +1,239 @@
+main {
+    section {
+        ul {
+            li {
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                color: $color-dos;
+            }
+        }
+    }
+}
+
+.portada {
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 95%;
+            height: 95%;
+            border-radius: 10px;
+        }
+
+        iframe {
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin: 10px;
+        }
+    }
+}
+
+.sobreLaBanda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    h2 {
+        width: 100%;
+    }
+}
+
+.miembros {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    color: $color-dos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    h2 {
+        width: 100%;
+    }
+
+    ul {
+        list-style: none;
+    }
+}
+
+.cancionesRecomendadas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    h2 {
+        width: 100%;
+    }
+}
+
+.singles {
+    .singlesDivs {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        img {
+            width: 400px;
+            height: 400px;
+        }
+    }
+}
+
+
+.albumesDivs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        width: 400px;
+        height: 400px;
+    }
+
+    h3 {
+        &:hover {
+            color: green;
+        }
+    }
+}
+
+#xtracklist,
+#girlfriendtracklist,
+#summermixtapetracklist {
+    h2 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+main {
+    section {
+        ol {
+            li {
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                color: $color-dos;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+.resenas {
+    div {
+        padding: 10px;
+        margin: 15px;
+        border: $color-cuatro 5px solid;
+        border-radius: 20px;
+        background-color: $color-dos;
+
+        h3 {
+            color: $color-tres;
+            font-style: italic;
+        }
+
+        p {
+            color: $color-tres;
+
+            a {
+                text-decoration: none;
+                font-style: italic;
+                background-color: $color-dos;
+                border-radius: 5px;
+                padding: 3px;
+            }
+        }
+    }
+}
+
+.contenedorVideos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 400px);
+
+    .titulosVideos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+.contenedorTweet {
+    .twitter-tweet {
+        margin: 0 auto;
+    }
+}
+
+.girlfriendTour {
+    div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    img {
+        width: 70%;
+    }
+}
+
+.enVivo {
+    margin-top: 10px;
+
+    .contenedorVideosCortos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+
+        .videosCortosVivo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    .conciertosCompletos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px;
+
+        .conciertosCompletosVideos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+}
