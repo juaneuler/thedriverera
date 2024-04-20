@@ -93,6 +93,9 @@ $color-cuatro: #F3F8FF;
 
 //! MIXINS !//
 
-@mixin flex ($flex, $justify, $align, $direction){
-
+@mixin flex ($flex, $justify, $align, $wrap){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
 }
