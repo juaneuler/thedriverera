@@ -81,14 +81,19 @@ header {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: italic;
-    color: #F3F8FF; }
+    color: #F3F8FF;
+    transition: color 1s !important; }
+    header h1:hover {
+      color: orangered !important; }
   header nav a {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-style: italic;
     font-size: 20px !important;
     color: white !important;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: color 1s !important; }
+    header nav a:hover {
+      color: orangered !important; }
 
 main section ul li {
   font-family: "Roboto", sans-serif;
@@ -167,8 +172,10 @@ main section ul li {
   .albumesDivs img {
     width: 400px;
     height: 400px; }
-  .albumesDivs h3:hover {
-    color: green; }
+  .albumesDivs h3 {
+    transition: color 0.5s; }
+    .albumesDivs h3:hover {
+      color: green; }
 
 #xtracklist h2,
 #girlfriendtracklist h2,
@@ -261,7 +268,8 @@ footer {
     width: 40%; }
     footer div a {
       font-size: 40px;
-      color: white; }
+      color: white;
+      transition: color 0.5s; }
       footer div a:hover {
         color: green; }
   footer p {

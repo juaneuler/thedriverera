@@ -12,7 +12,7 @@ footer {
         a {
             font-size: 40px;
             color: $color-dos;
-
+            transition: color 0.5s;
             &:hover {
                 color: green;
             }

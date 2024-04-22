@@ -108,6 +108,7 @@ main {
     }
 
     h3 {
+        transition: color 0.5s;
         &:hover {
             color: green;
         }
