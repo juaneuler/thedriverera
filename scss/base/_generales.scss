@@ -84,11 +84,15 @@ h3 {
 }
 
 //! VARIABLES !//
+$color-alternativo: green;
 
-$color-uno: #000000;
-$color-dos: white;
-$color-tres: #222831;
-$color-cuatro: #F3F8FF;
+//! LISTA !//
+
+$colores:
+#000000,
+white,
+#222831,
+#F3F8FF;
 
 
 //! MIXINS !//
@@ -99,3 +103,5 @@ $color-cuatro: #F3F8FF;
     align-items: $align;
     flex-wrap: $wrap;
 }
+
+//! EXTEND !//

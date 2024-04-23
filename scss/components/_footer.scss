@@ -1,5 +1,5 @@
 footer {
-    background-color: $color-uno;
+    background-color: nth($colores, 1);
     text-align: center;
 
     div {
@@ -11,10 +11,10 @@ footer {
 
         a {
             font-size: 40px;
-            color: $color-dos;
+            color: nth($colores, 2);
             transition: color 0.5s;
             &:hover {
-                color: green;
+                color: $color-alternativo;
             }
         }
     }
@@ -22,7 +22,7 @@ footer {
     p {
         margin: 0;
         padding-bottom: 10px;
-        color: $color-dos;
+        color: nth($colores, 2);
         font-style: italic;
     }
 }
