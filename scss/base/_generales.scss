@@ -26,8 +26,6 @@
     }
 }
 
-
-
 .navbar-toggler {
     background-color: white !important;
 }
@@ -102,15 +100,16 @@ h3 {
 }
 
 //! VARIABLES !//
+
 $color-alternativo: green;
 
 //! LISTA !//
 
-$colores: #000000,
+$colores: 
+    #000000,
     white,
     #222831,
     #F3F8FF;
-
 
 //! MIXINS !//
 
