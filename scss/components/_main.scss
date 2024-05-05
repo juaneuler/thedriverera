@@ -162,6 +162,11 @@ main {
                 background-color: nth($colores, 2);
                 border-radius: 5px;
                 padding: 3px;
+                transition: 1s !important;
+
+                &:hover {
+                    color: #003874 !important;
+                }
             }
         }
     }
