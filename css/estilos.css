@@ -389,6 +389,14 @@ footer {
   .contenedorTweet .twitter-tweet {
     width: 70% !important; } }
 
+@media screen and (max-width: 557px) {
+  header a h1 {
+    font-size: 30px; } }
+
+@media screen and (max-width: 548px) {
+  header nav a {
+    font-size: 15px !important; } }
+
 @media screen and (max-width: 513px) {
   section .carruselVorterix {
     width: 90% !important; } }
@@ -410,6 +418,10 @@ footer {
 @media screen and (max-width: 443px) {
   .miembros .carruselMiembros {
     width: 80% !important; } }
+
+@media screen and (max-width: 438px) {
+  header a h1 {
+    font-size: 25px; } }
 
 @media screen and (max-width: 430px) {
   .singles .singlesDivs div img {
