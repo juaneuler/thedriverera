@@ -232,35 +232,41 @@ main {
     }
 }
 
-.newsletter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contenedorNewsletter {
 
-    form {
+    height: 100%;
+
+    .newsletter {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: normal;
+        justify-content: center;
+        align-items: center;
 
-        div {
+        form {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 5px;
-            label {
-                font-family: "Roboto", sans-serif;
-                font-weight: 400;
-                font-size: 20px;
-                color: white;
-                margin-right: 5px;
-                margin-left: 5px;
-            }
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: normal;
 
-            input {
-                margin-left: 5px;
-                margin-right: 5px;
+            div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 5px;
+
+                label {
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: white;
+                    margin-right: 5px;
+                    margin-left: 5px;
+                }
+
+                input {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
             }
         }
     }
