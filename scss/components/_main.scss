@@ -1,3 +1,5 @@
+//! MAIN - INDEX !//
+
 main {
     section {
         ul {
@@ -82,6 +84,8 @@ main {
         width: 100%;
     }
 }
+
+//! MAIN - MUSICA !//
 
 .singles {
     .singlesDivs {
@@ -172,6 +176,8 @@ main {
     }
 }
 
+//! MAIN - VIDEOS !//
+
 .contenedorVideos {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -185,6 +191,8 @@ main {
         flex-wrap: wrap;
     }
 }
+
+//! MAIN - TOUR !//
 
 .contenedorTweet {
     .twitter-tweet {
@@ -206,6 +214,8 @@ main {
         width: 70%;
     }
 }
+
+//! MAIN - LIVE PERFORMANCES !//
 
 .enVivo {
     margin-top: 10px;
@@ -236,6 +246,8 @@ main {
         }
     }
 }
+
+//! MAIN - CONTACTO !//
 
 .contenedorNewsletter {
 
