@@ -171,30 +171,44 @@ main section ul li {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap; }
-  .singles .singlesDivs img {
-    width: 400px;
-    height: 400px; }
+  .singles .singlesDivs div {
+    background-color: #000000;
+    margin-bottom: 10px;
+    padding: 10px; }
+    .singles .singlesDivs div img {
+      width: 400px;
+      height: 400px; }
 
 .albumesDivs {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap; }
-  .albumesDivs a {
-    text-decoration: none; }
-  .albumesDivs img {
-    width: 400px;
-    height: 400px; }
-  .albumesDivs h3 {
-    transition: color 0.5s; }
-    .albumesDivs h3:hover {
-      color: green; }
+  .albumesDivs div {
+    background-color: #000000;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .albumesDivs div a {
+      text-decoration: none; }
+    .albumesDivs div img {
+      width: 400px;
+      height: 400px; }
+    .albumesDivs div h3 {
+      transition: color 0.5s; }
+      .albumesDivs div h3:hover {
+        color: green; }
 
 #xtracklist h2,
 #girlfriendtracklist h2,
 #summermixtapetracklist h2 {
   padding-left: 10px;
   padding-right: 10px; }
+
+#xtracklist ol,
+#girlfriendtracklist ol,
+#summermixtapetracklist ol {
+  margin: 20px; }
 
 main section ol li {
   font-family: "Roboto", sans-serif;

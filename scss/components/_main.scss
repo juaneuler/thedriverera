@@ -91,9 +91,15 @@ main {
     .singlesDivs {
         @include flex (flex, space-around, center, wrap);
 
-        img {
-            width: 400px;
-            height: 400px;
+        div {
+            background-color: nth($colores, 1);
+            margin-bottom: 10px;
+            padding: 10px;
+
+            img {
+                width: 400px;
+                height: 400px;
+            }
         }
     }
 }
@@ -102,22 +108,31 @@ main {
 .albumesDivs {
     @include flex (flex, space-around, center, wrap);
 
-    a {
-        text-decoration: none;
-    }
+    div {
+        background-color: nth($colores, 1);
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
 
-    img {
-        width: 400px;
-        height: 400px;
-    }
+        a {
+            text-decoration: none;
+        }
 
-    h3 {
-        transition: color 0.5s;
+        img {
+            width: 400px;
+            height: 400px;
+        }
 
-        &:hover {
-            color: $color-alternativo;
+        h3 {
+            transition: color 0.5s;
+
+            &:hover {
+                color: $color-alternativo;
+            }
         }
     }
+
+
 }
 
 #xtracklist,
@@ -126,6 +141,10 @@ main {
     h2 {
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    ol {
+        margin: 20px;
     }
 }
 
