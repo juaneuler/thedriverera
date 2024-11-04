@@ -1,9 +1,41 @@
-<h1 align="center">Hi 👋, I'm Juan Euler</h1>
-<h3 align="center">Web developer from Buenos Aires, Argentina</h3>
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
+# THE DRIVER ERA
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> </p>
+Sitio web dedicado a la banda compuesta por Ross y Rocky Lynch, creado para el curso de desarrollo web de Coderhouse. Podés encontrar información de la banda, su música y mucho más.
+
+
+## Autor
+
+- [@Juan Euler](https://github.com/juaneuler)
+
+
+## Tecnologías usadas
+
+Las librerías externas se integraron al sitio web usando links de CSS y Js
+
+- **Bootstrap - versión 5.2**: Menú para navegar entre páginas (personalizado por mí). Responsive generado por la librería. También se implementaron carruseles en diferentes páginas.
+- **Bootstrap Icons**: Íconos para redes sociales en el componente Footer.
+- **Animate Style CSS**: Animación para la foto de la portada del home y la sección "MÚSICA".
+- **SASS**: Se usó para generar estilos y separar cada hoja para hacer el proyecto más escalable y prolijo. Cabe aclarar que se usó la versión instalada con el comando **npm install -D node-sass nodemon**, que es una versión basada en LibSass. 
+- **Google Fonts**: Se usó para cambiar la tipografía default. Se pegó el link en el archivo **_generales.scss**
+
+
+## Despliegue
+
+Se puede ver el sitio web desde este link
+
+https://juaneuler-thedriverera.netlify.app/
+
+Servidor utilizado: Netlify
+
+
+## Uso
+
+Los usuarios pueden navegar entre 5 páginas distintas:
+
+- **HOME**: Información de la banda y widget de Spotify para reproducir las canciones más populares.
+- **MÚSICA**: Discografía de la banda y reseñas.
+- **VIDEOS**: videos oficiales.
+- **TOUR**: información de las giras realizadas, con énfasis en la gira de 2024 y el paso de la banda por Buenos Aires.
+- **LIVE PERFORMANCES**: fotos y videos en vivo. También se encuentran conciertos completos de festivales de 2023.
+- **CONTACTO**: Se hizo para cumplir con la consigna de uso de formulario, pero la información enviada no se almacena en ninguna base de datos. El botón submit mantiene el comportamiento por defecto de refrescar la página.
