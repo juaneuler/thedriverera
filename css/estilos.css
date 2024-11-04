@@ -79,7 +79,7 @@ h3 {
 .enVivo .contenedorVideosCortos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 400px); }
+  grid-template-rows: repeat(4, 400px); }
 
 header {
   background-color: #000000;
@@ -241,14 +241,16 @@ main section ol li {
 
 .contenedorVideos {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 400px); }
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 400px); }
   .contenedorVideos .titulosVideos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
+    .contenedorVideos .titulosVideos:nth-child(9) {
+      grid-column: span 2; }
 
 .contenedorTweet .twitter-tweet {
   margin: 0 auto; }

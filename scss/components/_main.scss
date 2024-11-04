@@ -199,8 +199,8 @@ main {
 
 .contenedorVideos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 400px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 400px);
 
     .titulosVideos {
         display: flex;
@@ -208,6 +208,10 @@ main {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+
+        &:nth-child(9) {
+            grid-column: span 2;
+        }
     }
 }
 
