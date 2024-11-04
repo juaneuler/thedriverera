@@ -6,7 +6,11 @@ Sitio web dedicado a la banda compuesta por Ross y Rocky Lynch, creado para el c
 
 ## Autor
 
-- [@Juan Euler](https://github.com/juaneuler)
+**Juan Euler**
+
+- Git Hub: https://github.com/juaneuler
+
+- LinkedIn: https://www.linkedin.com/in/juan-euler/
 
 
 ## Tecnologías usadas
@@ -24,7 +28,7 @@ Las librerías externas se integraron al sitio web usando links de CSS y Js
 
 Se puede ver el sitio web desde este link
 
-https://juaneuler-thedriverera.netlify.app/
+https://thedriverera.netlify.app/
 
 Servidor utilizado: Netlify
 
