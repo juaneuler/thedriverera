@@ -80,23 +80,57 @@ h3 {
 }
 
 .miembros {
-    .carruselMiembros {
-        width: 40% !important;
+    .carruselMiembrosConRol {
+        width: 90% !important;
+        margin-bottom: 30px;
+
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            max-height: 650px;
+            object-fit: contain;
+        }
     }
+
+    .carruselMiembros {
+        width: 90% !important;
+
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            max-height: 650px;
+            object-fit: contain;
+        }
+    }
+
 }
 
 .carruselTour {
-    width: 40% !important;
+    width: 90% !important;
     margin: 0 auto;
-    margin-bottom: 15px;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        max-height: 650px;
+        object-fit: contain;
+    }
 }
 
 .carruselVorterix {
-    width: 60% !important;
+    width: 90% !important;
     margin: 0 auto;
-    margin-bottom: 15px;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        max-height: 650px;
+        object-fit: contain;
+    }
 }
 
 .carruselLolla {
@@ -115,7 +149,13 @@ $color-alternativo: green;
 $colores: #000000,
     white,
     #222831,
-    #F3F8FF;
+    #F3F8FF,
+    #007bff,
+    #0056b3,
+    #121212,
+    #e4405f,
+    red,
+    #1db954;
 
 //! MIXINS !//
 

@@ -3,22 +3,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 5px;
 
     a {
         text-decoration: none;
     }
 
-    h1 {
-        font-size: 50px;
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-style: italic;
-        color: nth($colores, 4);
-        transition: color 1s !important;
-        &:hover {
-            color: orangered !important;
-        }
+    img {
+        width: 110px;
+        height: auto;
     }
 
     nav {
@@ -33,6 +26,12 @@ header {
             &:hover {
                 color: orangered !important;
             }
+
+            &.active {
+                font-weight: bold;
+                color: orangered !important;
+                border-bottom: 2px solid orangered;
+            } 
         }
     }
 }

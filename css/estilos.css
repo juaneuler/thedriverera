@@ -55,20 +55,44 @@ h3 {
   text-align: center;
   margin: 10px; }
 
+.miembros .carruselMiembrosConRol {
+  width: 90% !important;
+  margin-bottom: 30px; }
+  .miembros .carruselMiembrosConRol .carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 650px;
+    object-fit: contain; }
+
 .miembros .carruselMiembros {
-  width: 40% !important; }
+  width: 90% !important; }
+  .miembros .carruselMiembros .carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 650px;
+    object-fit: contain; }
 
 .carruselTour {
-  width: 40% !important;
+  width: 90% !important;
   margin: 0 auto;
-  margin-bottom: 15px;
-  margin-top: 10px; }
+  margin-bottom: 20px;
+  margin-top: 20px; }
+  .carruselTour .carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 650px;
+    object-fit: contain; }
 
 .carruselVorterix {
-  width: 60% !important;
+  width: 90% !important;
   margin: 0 auto;
-  margin-bottom: 15px;
-  margin-top: 10px; }
+  margin-bottom: 20px;
+  margin-top: 20px; }
+  .carruselVorterix .carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 650px;
+    object-fit: contain; }
 
 .carruselLolla {
   width: 50% !important;
@@ -86,18 +110,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px; }
+  padding: 5px; }
   header a {
     text-decoration: none; }
-  header h1 {
-    font-size: 50px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    color: #F3F8FF;
-    transition: color 1s !important; }
-    header h1:hover {
-      color: orangered !important; }
+  header img {
+    width: 110px;
+    height: auto; }
   header nav a {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -107,28 +125,28 @@ header {
     transition: color 1s !important; }
     header nav a:hover {
       color: orangered !important; }
+    header nav a.active {
+      font-weight: bold;
+      color: orangered !important;
+      border-bottom: 2px solid orangered; }
 
-main section ul li {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: white; }
-
-.portada div {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .portada div img {
-    width: 95%;
-    height: 95%;
-    border-radius: 10px; }
-  .portada div iframe {
-    margin: 10px;
-    border-radius: 10px; }
-  .portada div h2 {
-    margin: 10px; }
+.portada {
+  margin-bottom: 10px; }
+  .portada div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .portada div img {
+      width: 95%;
+      height: 95%;
+      border-radius: 10px; }
+    .portada div iframe {
+      margin: 10px;
+      border-radius: 10px; }
+    .portada div h2 {
+      margin: 10px; }
 
 .sobreLaBanda {
   display: flex;
@@ -136,26 +154,24 @@ main section ul li {
   justify-content: center;
   align-items: center;
   padding-left: 10px;
-  padding-right: 10px; }
+  padding-right: 10px;
+  margin-bottom: 10px; }
   .sobreLaBanda h2 {
     width: 100%; }
+  .sobreLaBanda p {
+    text-align: center;
+    margin-bottom: 10px; }
 
 .miembros {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  font-style: normal;
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-left: 10px;
-  padding-right: 10px; }
+  padding-right: 10px;
+  margin-bottom: 10px; }
   .miembros h2 {
     width: 100%; }
-  .miembros ul {
-    list-style: none; }
 
 .cancionesRecomendadas {
   display: flex;
@@ -174,10 +190,31 @@ main section ul li {
   .singles .singlesDivs div {
     background-color: #000000;
     margin-bottom: 10px;
-    padding: 10px; }
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px; }
     .singles .singlesDivs div img {
       width: 400px;
       height: 400px; }
+    .singles .singlesDivs div .botonResena,
+    .singles .singlesDivs div .botonSpotify {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      padding: 10px;
+      border-radius: 2px;
+      text-decoration: none;
+      font-weight: bold;
+      width: 60%;
+      transition: background-color 0.3s ease-in-out; }
+      .singles .singlesDivs div .botonResena:hover,
+      .singles .singlesDivs div .botonSpotify:hover {
+        background-color: #0056b3; }
 
 .albumesDivs {
   display: flex;
@@ -188,35 +225,31 @@ main section ul li {
     background-color: #000000;
     padding: 10px;
     margin-top: 10px;
-    margin-bottom: 10px; }
-    .albumesDivs div a {
-      text-decoration: none; }
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px; }
     .albumesDivs div img {
       width: 400px;
       height: 400px; }
-    .albumesDivs div h3 {
-      transition: color 0.5s; }
-      .albumesDivs div h3:hover {
-        color: green; }
-
-#xtracklist h2,
-#girlfriendtracklist h2,
-#summermixtapetracklist h2 {
-  padding-left: 10px;
-  padding-right: 10px; }
-
-#xtracklist ol,
-#girlfriendtracklist ol,
-#summermixtapetracklist ol {
-  margin: 20px; }
-
-main section ol li {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px; }
+    .albumesDivs div .botonResena,
+    .albumesDivs div .botonSpotify {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      padding: 10px;
+      border-radius: 2px;
+      text-decoration: none;
+      font-weight: bold;
+      width: 60%;
+      transition: background-color 0.3s ease-in-out; }
+      .albumesDivs div .botonResena:hover,
+      .albumesDivs div .botonSpotify:hover {
+        background-color: #0056b3; }
 
 .resenas div {
   padding: 10px;
@@ -241,16 +274,17 @@ main section ol li {
 
 .contenedorVideos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 400px); }
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 400px);
+  gap: 20px; }
   .contenedorVideos .titulosVideos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
-    .contenedorVideos .titulosVideos:nth-child(9) {
-      grid-column: span 2; }
+    .contenedorVideos .titulosVideos h3 {
+      margin-bottom: 10px; }
 
 .contenedorTweet .twitter-tweet {
   margin: 0 auto; }
@@ -315,33 +349,43 @@ main section ol li {
 
 footer {
   background-color: #000000;
-  text-align: center; }
+  text-align: center;
+  padding: 20px 0; }
   footer div {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    width: 40%; }
+    justify-content: center;
+    gap: 15px;
+    margin: 0 auto; }
     footer div a {
-      font-size: 40px;
-      color: white;
-      transition: color 0.5s; }
+      font-size: 28px;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: #121212;
+      transition: all 0.4s ease-in-out; }
       footer div a:hover {
-        color: green; }
+        background-color: #F3F8FF; }
+      footer div a.instagram {
+        color: #e4405f; }
+      footer div a.twitter {
+        color: white; }
+        footer div a.twitter:hover {
+          color: #121212; }
+      footer div a.youtube {
+        color: red; }
+      footer div a.spotify {
+        color: #1db954; }
   footer p {
-    margin: 0;
-    padding-bottom: 10px;
+    margin: 10px 0 0;
     color: white;
     font-style: italic; }
 
-@media screen and (max-width: 1080px) {
-  header a h1 {
-    font-size: 40px; } }
-
 @media screen and (max-width: 1075px) {
   .contenedorVideos {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 400px); }
+    grid-template-columns: 1fr; }
   .enVivo .contenedorVideosCortos {
     display: grid;
     grid-template-columns: 1fr;
@@ -351,31 +395,13 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 400px; } }
 
-@media screen and (max-width: 1004px) {
-  header nav a {
-    font-size: 15px !important; } }
-
-@media screen and (max-width: 960px) {
-  section .carruselVorterix {
-    width: 70% !important; } }
-
-@media screen and (max-width: 825px) {
-  .miembros .carruselMiembros {
-    width: 60% !important; } }
-
 @media screen and (max-width: 835px) {
   .girlfriendTour div img {
     width: 80%; } }
 
-@media screen and (max-width: 785px) {
-  .liveOnTour2024 .carruselTour {
-    width: 60% !important; }
-  section .carruselTour {
-    width: 60% !important; } }
-
 @media screen and (max-width: 650px) {
-  section .carruselVorterix {
-    width: 80% !important; } }
+  footer div {
+    width: 80%; } }
 
 @media screen and (max-width: 610px) {
   .portada div img {
@@ -391,17 +417,12 @@ footer {
     font-size: 20px; }
   .miembros {
     font-size: 15px; }
-    .miembros ol li {
-      font-family: "Roboto", sans-serif;
-      font-weight: 400;
-      font-size: 15px;
-      color: white; }
   footer div {
-    width: 40%; } }
+    width: 80%; } }
 
 @media screen and (max-width: 605px) {
   .contenedorVideos .titulosVideos iframe {
-    width: 80%; } }
+    width: 90%; } }
 
 @media screen and (max-width: 591px) {
   .enVivo .contenedorVideosCortos .videosCortosVivo iframe {
@@ -418,47 +439,13 @@ footer {
   .contenedorTweet .twitter-tweet {
     width: 70% !important; } }
 
-@media screen and (max-width: 557px) {
-  header a h1 {
-    font-size: 30px; } }
-
-@media screen and (max-width: 548px) {
-  header nav a {
-    font-size: 15px !important; } }
-
-@media screen and (max-width: 513px) {
-  section .carruselVorterix {
-    width: 90% !important; } }
-
-@media screen and (max-width: 510px) {
-  header a h1 {
-    font-size: 30px; } }
-
-@media screen and (max-width: 493px) {
-  .liveOnTour2024 .carruselTour {
-    width: 80% !important; }
-  section .carruselTour {
-    width: 80% !important; } }
-
-@media screen and (max-width: 486px) {
-  header a h1 {
-    font-size: 25px; } }
+@media screen and (max-width: 500px) {
+  .carousel-caption {
+    display: none; } }
 
 @media screen and (max-width: 485px) {
   footer div {
-    width: 60%; } }
-
-@media screen and (max-width: 449px) {
-  header h1 {
-    font-size: 22px; } }
-
-@media screen and (max-width: 443px) {
-  .miembros .carruselMiembros {
-    width: 80% !important; } }
-
-@media screen and (max-width: 438px) {
-  header a h1 {
-    font-size: 25px; } }
+    width: 80%; } }
 
 @media screen and (max-width: 430px) {
   .singles .singlesDivs div img {
