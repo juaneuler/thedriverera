@@ -2,31 +2,39 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .navbar {
-  background-color: #000000 !important; }
-  .navbar .container-fluid {
-    display: flex !important;
-    justify-content: flex-end !important; }
-    .navbar .container-fluid #navbarNavAltMarkup {
-      justify-content: flex-end !important; }
-      .navbar .container-fluid #navbarNavAltMarkup .navbar-nav .nav-link {
-        display: flex !important;
-        justify-content: flex-end !important; }
+  background-color: #000000 !important;
+}
+.navbar .container-fluid {
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+.navbar .container-fluid #navbarNavAltMarkup {
+  justify-content: flex-end !important;
+}
+.navbar .container-fluid #navbarNavAltMarkup .navbar-nav .nav-link {
+  display: flex !important;
+  justify-content: flex-end !important;
+}
 
 .navbar-toggler {
-  background-color: white !important; }
+  background-color: white !important;
+}
 
 main {
   background-color: #222831;
   padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+}
 
 span {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-style: italic; }
+  font-style: italic;
+}
 
 p {
   font-family: "Roboto", sans-serif;
@@ -35,7 +43,8 @@ p {
   color: white;
   padding-left: 10px;
   padding-right: 10px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 h2 {
   font-family: "Roboto", sans-serif;
@@ -45,7 +54,8 @@ h2 {
   text-align: center;
   background-color: white;
   padding: 10px;
-  border-radius: 20px; }
+  border-radius: 20px;
+}
 
 h3 {
   color: white;
@@ -53,100 +63,122 @@ h3 {
   font-weight: 500;
   font-size: 25px;
   text-align: center;
-  margin: 10px; }
+  margin: 10px;
+}
 
 .miembros .carruselMiembrosConRol {
   width: 90% !important;
-  margin-bottom: 30px; }
-  .miembros .carruselMiembrosConRol .carousel-item img {
-    width: 100%;
-    height: auto;
-    max-height: 650px;
-    object-fit: contain; }
-
+  margin-bottom: 30px;
+}
+.miembros .carruselMiembrosConRol .carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 650px;
+  object-fit: contain;
+}
 .miembros .carruselMiembros {
-  width: 90% !important; }
-  .miembros .carruselMiembros .carousel-item img {
-    width: 100%;
-    height: auto;
-    max-height: 650px;
-    object-fit: contain; }
+  width: 90% !important;
+}
+.miembros .carruselMiembros .carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 650px;
+  object-fit: contain;
+}
 
 .carruselTour {
   width: 90% !important;
   margin: 0 auto;
   margin-bottom: 20px;
-  margin-top: 20px; }
-  .carruselTour .carousel-item img {
-    width: 100%;
-    height: auto;
-    max-height: 650px;
-    object-fit: contain; }
+  margin-top: 20px;
+}
+.carruselTour .carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 650px;
+  object-fit: contain;
+}
 
 .carruselVorterix {
   width: 90% !important;
   margin: 0 auto;
   margin-bottom: 20px;
-  margin-top: 20px; }
-  .carruselVorterix .carousel-item img {
-    width: 100%;
-    height: auto;
-    max-height: 650px;
-    object-fit: contain; }
+  margin-top: 20px;
+}
+.carruselVorterix .carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 650px;
+  object-fit: contain;
+}
 
 .carruselLolla {
   width: 50% !important;
   margin: 0 auto;
   margin-bottom: 15px;
-  margin-top: 10px; }
+  margin-top: 10px;
+}
 
-.enVivo .contenedorVideosCortos {
+.contenedorVideos, .enVivo .contenedorVideosCortos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, 400px); }
+  grid-template-rows: repeat(4, 400px);
+  gap: 20px;
+}
 
 header {
   background-color: #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px; }
-  header a {
-    text-decoration: none; }
-  header img {
-    width: 110px;
-    height: auto; }
-  header nav a {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 20px !important;
-    color: white !important;
-    text-decoration: none;
-    transition: color 1s !important; }
-    header nav a:hover {
-      color: orangered !important; }
-    header nav a.active {
-      font-weight: bold;
-      color: orangered !important;
-      border-bottom: 2px solid orangered; }
+  padding: 5px;
+}
+header a {
+  text-decoration: none;
+}
+header img {
+  width: 110px;
+  height: auto;
+}
+header nav a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px !important;
+  color: white !important;
+  text-decoration: none;
+  transition: color 1s !important;
+}
+header nav a:hover {
+  color: orangered !important;
+}
+header nav a.active {
+  font-weight: bold;
+  color: orangered !important;
+  border-bottom: 2px solid orangered;
+}
 
 .portada {
-  margin-bottom: 10px; }
-  .portada div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .portada div img {
-      width: 95%;
-      height: 95%;
-      border-radius: 10px; }
-    .portada div iframe {
-      margin: 10px;
-      border-radius: 10px; }
-    .portada div h2 {
-      margin: 10px; }
+  margin-bottom: 10px;
+}
+.portada div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portada div img {
+  width: 95%;
+  height: 95%;
+  border-radius: 10px;
+}
+.portada div iframe {
+  margin: 10px;
+  border-radius: 10px;
+}
+.portada div h2 {
+  margin: 10px;
+}
 
 .sobreLaBanda {
   display: flex;
@@ -155,12 +187,15 @@ header {
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
-  margin-bottom: 10px; }
-  .sobreLaBanda h2 {
-    width: 100%; }
-  .sobreLaBanda p {
-    text-align: center;
-    margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
+.sobreLaBanda h2 {
+  width: 100%;
+}
+.sobreLaBanda p {
+  text-align: center;
+  margin-bottom: 10px;
+}
 
 .miembros {
   display: flex;
@@ -169,125 +204,212 @@ header {
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
-  margin-bottom: 10px; }
-  .miembros h2 {
-    width: 100%; }
+  margin-bottom: 10px;
+}
+.miembros h2 {
+  width: 100%;
+}
 
 .cancionesRecomendadas {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px; }
-  .cancionesRecomendadas h2 {
-    width: 100%; }
+  padding: 10px;
+}
+.cancionesRecomendadas h2 {
+  width: 100%;
+}
+
+.ultimoLanzamiento h2 {
+  width: 100%;
+}
+.ultimoLanzamiento .ultimoLanzamientoContenedor div {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.ultimoLanzamiento .ultimoLanzamientoContenedor div h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+}
+.ultimoLanzamiento .ultimoLanzamientoContenedor div img {
+  width: 600px;
+  height: 600px;
+}
+.ultimoLanzamiento .ultimoLanzamientoContenedor div .botonResena,
+.ultimoLanzamiento .ultimoLanzamientoContenedor div .botonSpotify {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: bold;
+  width: 60%;
+  transition: background-color 0.3s ease-in-out;
+}
+.ultimoLanzamiento .ultimoLanzamientoContenedor div .botonResena:hover,
+.ultimoLanzamiento .ultimoLanzamientoContenedor div .botonSpotify:hover {
+  background-color: #0056b3;
+}
 
 .singles .singlesDivs {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap; }
-  .singles .singlesDivs div {
-    background-color: #000000;
-    margin-bottom: 10px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px; }
-    .singles .singlesDivs div img {
-      width: 400px;
-      height: 400px; }
-    .singles .singlesDivs div .botonResena,
-    .singles .singlesDivs div .botonSpotify {
-      display: inline-block;
-      background-color: #007bff;
-      color: white;
-      text-align: center;
-      font-family: "Roboto", sans-serif;
-      padding: 10px;
-      border-radius: 2px;
-      text-decoration: none;
-      font-weight: bold;
-      width: 60%;
-      transition: background-color 0.3s ease-in-out; }
-      .singles .singlesDivs div .botonResena:hover,
-      .singles .singlesDivs div .botonSpotify:hover {
-        background-color: #0056b3; }
+  flex-wrap: wrap;
+}
+.singles .singlesDivs div {
+  background-color: #000000;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.singles .singlesDivs div img {
+  width: 400px;
+  height: 400px;
+}
+.singles .singlesDivs div .botonResena,
+.singles .singlesDivs div .botonSpotify {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: bold;
+  width: 60%;
+  transition: background-color 0.3s ease-in-out;
+}
+.singles .singlesDivs div .botonResena:hover,
+.singles .singlesDivs div .botonSpotify:hover {
+  background-color: #0056b3;
+}
 
 .albumesDivs {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap; }
-  .albumesDivs div {
-    background-color: #000000;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px; }
-    .albumesDivs div img {
-      width: 400px;
-      height: 400px; }
-    .albumesDivs div .botonResena,
-    .albumesDivs div .botonSpotify {
-      display: inline-block;
-      background-color: #007bff;
-      color: white;
-      text-align: center;
-      font-family: "Roboto", sans-serif;
-      padding: 10px;
-      border-radius: 2px;
-      text-decoration: none;
-      font-weight: bold;
-      width: 60%;
-      transition: background-color 0.3s ease-in-out; }
-      .albumesDivs div .botonResena:hover,
-      .albumesDivs div .botonSpotify:hover {
-        background-color: #0056b3; }
+  flex-wrap: wrap;
+}
+.albumesDivs div {
+  background-color: #000000;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.albumesDivs div img {
+  width: 400px;
+  height: 400px;
+}
+.albumesDivs div .botonResena,
+.albumesDivs div .botonSpotify {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: bold;
+  width: 60%;
+  transition: background-color 0.3s ease-in-out;
+}
+.albumesDivs div .botonResena:hover,
+.albumesDivs div .botonSpotify:hover {
+  background-color: #0056b3;
+}
 
 .resenas div {
   padding: 10px;
   margin: 15px;
   border: #F3F8FF 5px solid;
   border-radius: 20px;
-  background-color: white; }
-  .resenas div h3 {
-    color: #222831;
-    font-style: italic; }
-  .resenas div p {
-    color: #222831; }
-    .resenas div p a {
-      text-decoration: none;
-      font-style: italic;
-      background-color: white;
-      border-radius: 5px;
-      padding: 3px;
-      transition: 1s !important; }
-      .resenas div p a:hover {
-        color: #003874 !important; }
+  background-color: white;
+}
+.resenas div h3 {
+  color: #222831;
+  font-style: italic;
+}
+.resenas div p {
+  color: #222831;
+}
+.resenas div p a {
+  text-decoration: none;
+  font-style: italic;
+  background-color: white;
+  border-radius: 5px;
+  padding: 3px;
+  transition: 1s !important;
+}
+.resenas div p a:hover {
+  color: #003874 !important;
+}
 
-.contenedorVideos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, 400px);
-  gap: 20px; }
-  .contenedorVideos .titulosVideos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; }
-    .contenedorVideos .titulosVideos h3 {
-      margin-bottom: 10px; }
+.contenedorVideos .titulosVideos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contenedorVideos .titulosVideos h3 {
+  margin-bottom: 10px;
+}
+
+.obsessionTour2025 {
+  margin: 20px;
+}
+.obsessionTour2025 p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.obsessionTour2025 .fotoObsessionPortada,
+.obsessionTour2025 img {
+  width: 100%;
+  max-height: 650px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+.obsessionTour2025 .setlistAcustico {
+  color: white;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+.obsessionTour2025 .setlistAcustico span {
+  font-weight: normal;
+  font-style: normal;
+}
+.obsessionTour2025 .contenedorInstagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .contenedorTweet .twitter-tweet {
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .girlfriendTour div {
   display: flex;
@@ -295,170 +417,235 @@ header {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 15px;
-  margin-bottom: 15px; }
-
+  margin-bottom: 15px;
+}
 .girlfriendTour img {
-  width: 70%; }
+  width: 70%;
+}
 
 .enVivo {
-  margin-top: 10px; }
-  .enVivo .contenedorVideosCortos .videosCortosVivo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; }
-  .enVivo .conciertosCompletos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px; }
-    .enVivo .conciertosCompletos .conciertosCompletosVideos {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap; }
+  margin-top: 10px;
+}
+.enVivo .contenedorVideosCortos .videosCortosVivo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.enVivo .conciertosCompletos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.enVivo .conciertosCompletos .conciertosCompletosVideos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 .contenedorNewsletter {
-  height: 100%; }
-  .contenedorNewsletter .newsletter {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .contenedorNewsletter .newsletter form {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: normal; }
-      .contenedorNewsletter .newsletter form div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 5px; }
-        .contenedorNewsletter .newsletter form div label {
-          font-family: "Roboto", sans-serif;
-          font-weight: 400;
-          font-size: 20px;
-          color: white;
-          margin-right: 5px;
-          margin-left: 5px; }
-        .contenedorNewsletter .newsletter form div input {
-          margin-left: 5px;
-          margin-right: 5px; }
+  height: 100%;
+}
+.contenedorNewsletter .newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorNewsletter .newsletter form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: normal;
+}
+.contenedorNewsletter .newsletter form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+.contenedorNewsletter .newsletter form div label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.contenedorNewsletter .newsletter form div input {
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
 footer {
   background-color: #000000;
   text-align: center;
-  padding: 20px 0; }
-  footer div {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 0 auto; }
-    footer div a {
-      font-size: 28px;
-      width: 55px;
-      height: 55px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      background-color: #121212;
-      transition: all 0.4s ease-in-out; }
-      footer div a:hover {
-        background-color: #F3F8FF; }
-      footer div a.instagram {
-        color: #e4405f; }
-      footer div a.twitter {
-        color: white; }
-        footer div a.twitter:hover {
-          color: #121212; }
-      footer div a.youtube {
-        color: red; }
-      footer div a.spotify {
-        color: #1db954; }
-  footer p {
-    margin: 10px 0 0;
-    color: white;
-    font-style: italic; }
+  padding: 20px 0;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 0 auto;
+}
+footer div a {
+  font-size: 28px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #121212;
+  transition: all 0.4s ease-in-out;
+}
+footer div a:hover {
+  background-color: #F3F8FF;
+}
+footer div a.instagram {
+  color: #e4405f;
+}
+footer div a.twitter {
+  color: white;
+}
+footer div a.twitter:hover {
+  color: #121212;
+}
+footer div a.youtube {
+  color: red;
+}
+footer div a.spotify {
+  color: #1db954;
+}
+footer p {
+  margin: 10px 0 0;
+  color: white;
+  font-style: italic;
+}
 
 @media screen and (max-width: 1075px) {
   .contenedorVideos {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+  }
   .enVivo .contenedorVideosCortos {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 400px); }
+    grid-template-rows: repeat(6, 400px);
+  }
   .enVivo .conciertosCompletos {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 400px; } }
-
+    grid-template-rows: 400px;
+  }
+}
 @media screen and (max-width: 835px) {
   .girlfriendTour div img {
-    width: 80%; } }
-
+    width: 80%;
+  }
+}
+@media screen and (max-width: 670px) {
+  .ultimoLanzamiento .ultimoLanzamientoContenedor div img {
+    width: 400px;
+    height: 400px;
+  }
+}
 @media screen and (max-width: 650px) {
   footer div {
-    width: 80%; } }
-
+    width: 80%;
+  }
+}
 @media screen and (max-width: 610px) {
   .portada div img {
     width: 90%;
-    height: 80%; }
+    height: 80%;
+  }
   .portada div iframe {
-    width: 90%; }
+    width: 90%;
+  }
   p {
-    font-size: 15px; }
+    font-size: 15px;
+  }
   h2 {
-    font-size: 20px; }
+    font-size: 20px;
+  }
   h3 {
-    font-size: 20px; }
+    font-size: 20px;
+  }
   .miembros {
-    font-size: 15px; }
+    font-size: 15px;
+  }
   footer div {
-    width: 80%; } }
-
+    width: 80%;
+  }
+}
 @media screen and (max-width: 605px) {
   .contenedorVideos .titulosVideos iframe {
-    width: 90%; } }
-
+    width: 90%;
+  }
+}
 @media screen and (max-width: 591px) {
   .enVivo .contenedorVideosCortos .videosCortosVivo iframe {
-    width: 80%; }
+    width: 80%;
+  }
   .enVivo .conciertosCompletos .conciertosCompletosVideos iframe {
-    width: 80%; } }
-
+    width: 80%;
+  }
+}
 @media screen and (max-width: 583px) {
   .girlfriendTour div img {
     width: 80%;
-    height: 100%; } }
-
+    height: 100%;
+  }
+}
 @media screen and (max-width: 573px) {
   .contenedorTweet .twitter-tweet {
-    width: 70% !important; } }
-
+    width: 70% !important;
+  }
+}
 @media screen and (max-width: 500px) {
   .carousel-caption {
-    display: none; } }
-
+    display: none;
+  }
+}
 @media screen and (max-width: 485px) {
   footer div {
-    width: 80%; } }
-
+    width: 80%;
+  }
+}
+@media screen and (max-width: 470px) {
+  .ultimoLanzamiento .ultimoLanzamientoContenedor div img {
+    width: 350px;
+    height: 350px;
+  }
+}
 @media screen and (max-width: 430px) {
   .singles .singlesDivs div img {
     width: 300px;
-    height: 300px; }
+    height: 300px;
+  }
   .albumes .albumesDivs div img {
     width: 300px;
-    height: 300px; } }
-
+    height: 300px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .ultimoLanzamiento .ultimoLanzamientoContenedor div img {
+    width: 300px;
+    height: 300px;
+  }
+}
 @media screen and (max-width: 389px) {
   h3 {
-    font-size: 15px; } }
-
+    font-size: 15px;
+  }
+}
 @media screen and (max-width: 381px) {
   .contenedorTweet {
-    width: 50% !important; } }
+    width: 50% !important;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

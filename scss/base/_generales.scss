@@ -41,6 +41,7 @@ main {
     background-color: #222831;
     padding-top: 10px;
     padding-bottom: 10px;
+
 }
 
 span {
@@ -172,4 +173,5 @@ $colores: #000000,
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 400px);
+    gap: 20px;
 }

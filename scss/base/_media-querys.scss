@@ -28,6 +28,19 @@
     }
 }
 
+@media screen and (max-width:670px) {
+    .ultimoLanzamiento {
+        .ultimoLanzamientoContenedor {
+            div {
+                img {
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width:650px) {
     footer {
         div {
@@ -123,15 +136,28 @@
 }
 
 @media screen and (max-width:500px) {
-        .carousel-caption {
-          display: none;
-        }
+    .carousel-caption {
+        display: none;
+    }
 }
 
 @media screen and (max-width:485px) {
     footer {
         div {
             width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width:470px) {
+    .ultimoLanzamiento {
+        .ultimoLanzamientoContenedor {
+            div {
+                img {
+                    width: 350px;
+                    height: 350px;
+                }
+            }
         }
     }
 }
@@ -150,6 +176,19 @@
 
     .albumes {
         .albumesDivs {
+            div {
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:410px) {
+    .ultimoLanzamiento {
+        .ultimoLanzamientoContenedor {
             div {
                 img {
                     width: 300px;

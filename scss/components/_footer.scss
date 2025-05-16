@@ -1,5 +1,8 @@
+@use '../base/generales' as gen;
+@use 'sass:list';
+
 footer {
-    background-color: nth($colores, 1);
+    background-color: list.nth(gen.$colores, 1);
     text-align: center;
     padding: 20px 0;
 
@@ -17,36 +20,36 @@ footer {
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            background-color: nth($colores, 7);
+            background-color: list.nth(gen.$colores, 7);
             transition: all 0.4s ease-in-out;
 
             &:hover {
-                background-color: nth($colores, 4);
+                background-color: list.nth(gen.$colores, 4);
             }
 
 
             &.instagram {
-                color: nth($colores, 8);
+                color: list.nth(gen.$colores, 8);
             }
             &.twitter {
-                color: nth($colores, 2);
+                color: list.nth(gen.$colores, 2);
 
                 &:hover {
-                    color: nth($colores, 7);
+                    color: list.nth(gen.$colores, 7);
                 }
             }
             &.youtube {
-                color: nth($colores, 9);
+                color: list.nth(gen.$colores, 9);
             }
             &.spotify {
-                color: nth($colores, 10);
+                color: list.nth(gen.$colores, 10);
             }
         }
     }
 
     p {
         margin: 10px 0 0;
-        color: nth($colores, 2);
+        color: list.nth(gen.$colores, 2);
         font-style: italic;
     }
 }

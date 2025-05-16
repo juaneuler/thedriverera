@@ -1,5 +1,8 @@
+@use '../base/generales' as gen;
+@use 'sass:list';
+
 header {
-    background-color: nth($colores, 1);
+    background-color: list.nth(gen.$colores, 1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +22,7 @@ header {
             font-family: "Roboto", sans-serif;
             font-weight: 400;
             font-size: 20px !important;
-            color: nth($colores, 2) !important;
+            color: list.nth(gen.$colores, 2) !important;
             text-decoration: none;
             transition: color 1s !important;
 

@@ -1,3 +1,6 @@
+@use '../base/generales' as gen;
+@use 'sass:list';
+
 //! MAIN - INDEX !//
 
 .portada {
@@ -75,12 +78,59 @@
 
 //! MAIN - MUSICA !//
 
+.ultimoLanzamiento {
+
+    h2 {
+        width: 100%;
+    }
+
+    .ultimoLanzamientoContenedor {
+        div {
+            display: flex;
+            flex-direction: column;
+
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+            h3 {
+                font-size: 2rem;
+                text-transform: uppercase;
+                color: list.nth(gen.$colores, 2);
+            }
+
+            img {
+                width: 600px;
+                height: 600px;
+            }
+
+            .botonResena,
+            .botonSpotify {
+                display: inline-block;
+                background-color: list.nth(gen.$colores, 5);
+                color: list.nth(gen.$colores, 2);
+                text-align: center;
+                font-family: "Roboto", sans-serif;
+                padding: 10px;
+                border-radius: 2px;
+                text-decoration: none;
+                font-weight: bold;
+                width: 60%;
+                transition: background-color 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: list.nth(gen.$colores, 6);
+                }
+            }
+        }
+    }
+}
+
 .singles {
     .singlesDivs {
-        @include flex (flex, space-around, center, wrap);
+        @include gen.flex(flex, space-around, center, wrap);
 
         div {
-            background-color: nth($colores, 1);
+            background-color: list.nth(gen.$colores, 1);
             margin-bottom: 10px;
             padding: 10px;
             display: flex;
@@ -97,8 +147,8 @@
             .botonResena,
             .botonSpotify {
                 display: inline-block;
-                background-color: nth($colores, 5);
-                color: nth($colores, 2);
+                background-color: list.nth(gen.$colores, 5);
+                color: list.nth(gen.$colores, 2);
                 text-align: center;
                 font-family: "Roboto", sans-serif;
                 padding: 10px;
@@ -109,8 +159,7 @@
                 transition: background-color 0.3s ease-in-out;
 
                 &:hover {
-                    background-color: nth($colores, 6);
-                    ;
+                    background-color: list.nth(gen.$colores, 6);
                 }
             }
         }
@@ -119,10 +168,10 @@
 
 
 .albumesDivs {
-    @include flex (flex, space-around, center, wrap);
+    @include gen.flex(flex, space-around, center, wrap);
 
     div {
-        background-color: nth($colores, 1);
+        background-color: list.nth(gen.$colores, 1);
         padding: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -140,8 +189,8 @@
         .botonResena,
         .botonSpotify {
             display: inline-block;
-            background-color: nth($colores, 5);
-            color: nth($colores, 2);
+            background-color: list.nth(gen.$colores, 5);
+            color: list.nth(gen.$colores, 2);
             text-align: center;
             font-family: "Roboto", sans-serif;
             padding: 10px;
@@ -152,8 +201,7 @@
             transition: background-color 0.3s ease-in-out;
 
             &:hover {
-                background-color: nth($colores, 6);
-                ;
+                background-color: list.nth(gen.$colores, 6);
             }
         }
     }
@@ -163,22 +211,22 @@
     div {
         padding: 10px;
         margin: 15px;
-        border: nth($colores, 4) 5px solid;
+        border: list.nth(gen.$colores, 4) 5px solid;
         border-radius: 20px;
-        background-color: nth($colores, 2);
+        background-color: list.nth(gen.$colores, 2);
 
         h3 {
-            color: nth($colores, 3);
+            color: list.nth(gen.$colores, 3);
             font-style: italic;
         }
 
         p {
-            color: nth($colores, 3);
+            color: list.nth(gen.$colores, 3);
 
             a {
                 text-decoration: none;
                 font-style: italic;
-                background-color: nth($colores, 2);
+                background-color: list.nth(gen.$colores, 2);
                 border-radius: 5px;
                 padding: 3px;
                 transition: 1s !important;
@@ -194,10 +242,7 @@
 //! MAIN - VIDEOS !//
 
 .contenedorVideos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 400px);
-    gap: 20px;
+    @extend %grid-videos;
 
     .titulosVideos {
         display: flex;
@@ -213,6 +258,44 @@
 }
 
 //! MAIN - TOUR !//
+
+.obsessionTour2025 {
+    margin: 20px;
+
+    p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .fotoObsessionPortada,
+    img {
+        width: 100%;
+        max-height: 650px;
+        height: auto;
+        object-fit: contain;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .setlistAcustico {
+        color: white;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+
+        span {
+            font-weight: normal;
+            font-style: normal;
+        }
+    }
+
+    .contenedorInstagram {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 .contenedorTweet {
     .twitter-tweet {
@@ -255,7 +338,7 @@
     .conciertosCompletos {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 400px;
+        gap: 20px;
 
         .conciertosCompletosVideos {
             display: flex;
@@ -295,7 +378,7 @@
                     font-family: "Roboto", sans-serif;
                     font-weight: 400;
                     font-size: 20px;
-                    color: nth($colores, 2);
+                    color: list.nth(gen.$colores, 2);
                     margin-right: 5px;
                     margin-left: 5px;
                 }
