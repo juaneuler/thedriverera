@@ -18,8 +18,13 @@
     <!-- Link de CSS -->
     <link rel="stylesheet" href="css/estilos.css">
 
-    <!-- Link de Favicon -->
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- Links de Favicon -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="THE DRIVER ERA" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Meta description y keywords -->
     <meta name="description"
@@ -67,17 +72,17 @@
     <main>
         <section class="portada">
             <div>
-                <img class="animate__animated animate__fadeIn animate__slower" src="img/tde2024-2.jpg"
-                    alt="Ross y Rocky como portada">
+                <img class="animate-on-scroll fade-in" src="img/tde2024-2.jpg" alt="Ross y Rocky como portada">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/IOnh86Ctcic?si=k1aKOyi0v6KceFf8"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h2>ÚLTIMO LANZAMIENTO: "OVER AGAIN"</h2>
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                    class="animate-on-scroll fade-in"></iframe>
+                <h2 class="animate-on-scroll fade-in">ÚLTIMO LANZAMIENTO: "OVER AGAIN"</h2>
             </div>
         </section>
 
-        <section class="sobreLaBanda">
+        <section class="sobreLaBanda animate-on-scroll fade-in">
             <h2>SOBRE LA BANDA</h2>
             <p>
                 Compuesta por los hermanos Ross y Rocky Lynch, la banda surge en 2018 en Los Angeles, California, como
@@ -88,7 +93,7 @@
             </p>
         </section>
 
-        <section class="miembros">
+        <section class="miembros animate-on-scroll zoom-in">
             <h2>MIEMBROS</h2>
             <div class="carruselMiembrosConRol">
                 <div id="carouselExampleMiembros" class="carousel slide">
@@ -162,7 +167,7 @@
                     </button>
                 </div>
             </div>
-            <div class="carruselMiembros">
+            <div class="carruselMiembros animate-on-scroll zoom-in">
                 <div id="carouselExampleControls" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -196,7 +201,7 @@
             </div>
         </section>
 
-        <section class="cancionesRecomendadas">
+        <section class="cancionesRecomendadas animate-on-scroll slide-up">
             <h2>CANCIONES RECOMENDADAS</h2>
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/artist/5bmqhxWk9SEFDGIzWpSjVJ?utm_source=generator" width="100%"
@@ -227,28 +232,9 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 
-    <!-- Pequeña lógica de Js para determinar que pestaña está activa y marcarlo en la barra de navegación -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Obtiene la URL actual sin parámetros
-            let currentPath = window.location.pathname.split("/").pop();
-
-            // Selecciona todos los enlaces del navbar
-            let navLinks = document.querySelectorAll(".navbar-nav a");
-
-            navLinks.forEach(link => {
-                // Obtiene el href de cada enlace
-                let linkPath = link.getAttribute("href").split("/").pop();
-
-                // Si coincide con la página actual, agrega la clase "active"
-                if (linkPath === currentPath) {
-                    link.classList.add("active");
-                } else {
-                    link.classList.remove("active");
-                }
-            });
-        });
-    </script>
+    <!-- Scripts para archivos .js de navegación y animaciones -->
+    <script src="js/navbar-active.js"></script>
+    <script src="js/animaciones-scroll.js"></script>
 </body>
 
 </html>

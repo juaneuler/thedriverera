@@ -37,6 +37,10 @@
 
 //! MAIN !//
 
+.animate-on-scroll {
+  opacity: 0;
+}
+
 main {
     background-color: #222831;
     padding-top: 10px;
@@ -156,7 +160,9 @@ $colores: #000000,
     #121212,
     #e4405f,
     red,
-    #1db954;
+    #1db954,
+    #f8f8f8,
+    #ccc;
 
 //! MIXINS !//
 
